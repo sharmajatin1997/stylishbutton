@@ -7,7 +7,7 @@ Stylish Button package lets you add a beautiful , stylish and gradient  button t
 1. Add the latest version of package to your pubspec.yaml (and dart pub get):
 
 dependencies:
-  stylish_button: ^0.0.1
+  stylishbutton: ^0.0.1
 
 2. Import the package and use it in your App.
 
