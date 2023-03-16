@@ -1,32 +1,33 @@
 import 'package:flutter/material.dart';
 
-class StylishSquareButton extends StatelessWidget {
+class CurveButton extends StatelessWidget {
 
   final String text;
   final TextStyle? style;
   final double? margin;
-  final Color? shadowColor;
   final Color? buttonColor;
-  final Color? borderColor;
   final double? width;
   final double? height;
   final VoidCallback? onPressed;
-  final EdgeInsetsGeometry? padding;
   final Color? textColor;
+  final double? fontSize;
+  final double? borderWidth;
+  final double? borderRadius;
+  final Color? borderColor;
 
-  StylishSquareButton(
+  const CurveButton(
       {super.key,
         required this.text,
         this.style,
         this.margin,
         this.width,
-        this.shadowColor,
         this.textColor,
         this.buttonColor,
         this.borderColor,
         this.onPressed,
-        this.padding,
-        this.height});
+        this.fontSize,
+        this.borderWidth,
+        this.borderRadius, this.height});
 
   @override
   Widget build(BuildContext context) {
@@ -37,18 +38,17 @@ class StylishSquareButton extends StatelessWidget {
           color: buttonColor ?? Colors.blue,
           shape: BoxShape.rectangle,
           border: Border.all(
-              width: 1,
+              width: borderWidth??1,
               color: (borderColor ??
                   buttonColor ??
                   Colors.blue.withOpacity(0.8))),
-          boxShadow: const [
-            BoxShadow(
-              color: Colors.black12,
-              blurRadius: 2, // Shadow position
+          borderRadius: BorderRadius.all(
+            Radius.circular(
+              borderRadius ?? 25,
             ),
-          ],
+          ),
         ),
-        height:50,
+        height:height??50,
         width: width ?? MediaQuery.of(context).size.width/1.5,
         margin: EdgeInsets.symmetric(horizontal: margin ?? 10),
         child: Center(
@@ -58,14 +58,13 @@ class StylishSquareButton extends StatelessWidget {
     );
   }
 
-
   Widget getText() {
     return Text(
       text,
       textAlign: TextAlign.center,
       style: style ??
           TextStyle(
-              fontSize: 17,
+              fontSize: fontSize??17,
               fontWeight: FontWeight.w700,
               color: textColor ?? Colors.white),
     );
