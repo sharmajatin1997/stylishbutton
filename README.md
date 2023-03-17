@@ -1,8 +1,10 @@
 <h1 align="center">Flutter stylishbutton</h1>
 
-## Flutter Stylish Button
-[![pub package](https://img.shields.io/pub/v/flutter_social_button.svg)](https://pub.dev/packages/stylishbutton)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-in-0e76a8)](https://www.linkedin.com/in/alok-dubey-02ba331b6)
+[//]: # (## Flutter Stylish Button)
+
+[//]: # ([![pub package]&#40;https://img.shields.io/pub/v/flutter_social_button.svg&#41;]&#40;https://pub.dev/packages/stylishbutton&#41;)
+
+[//]: # ([![LinkedIn]&#40;https://img.shields.io/badge/LinkedIn-in-0e76a8&#41;]&#40;https://www.linkedin.com/in/alok-dubey-02ba331b6&#41;)
  
 ## Features 
 Stylish Button package lets you add a beautiful , stylish and gradient  button to your app.
